@@ -51,9 +51,9 @@ if(isset($_POST["giris"])){
             //parola doğru giriş yapıldı
             //oturum başlat
              session_start();
-            $_SESSION["email"] = $bulunankayit["email"]; //bulunan hesap bulunankayit ile
+            $_SESSION["email"] = $bulunankayit["email"]; //bulunan hesap bulunankayit ile değişkene attım.
             $_SESSION["isim"] = $bulunankayit["isim"];
-            $_SESSION["soyisim"] = $bulunankayit["soyisim"];
+            $_SESSION["soyisim"] = $bulunankayit["soyisim"]; //Hitap etmek için isim soyisim verilerini aldım
 
             header("location:profile.php");
         }
@@ -99,7 +99,7 @@ if(isset($_POST["giris"])){
     </head>
 <body>
         
-    <div class="container p-5">
+    <div class="container p-5">  //genel kayıt bloğu
         <div class="card p-5">
 
             <form action="login.php" method="POST">
@@ -109,7 +109,7 @@ if(isset($_POST["giris"])){
             <input type="email" class="form-control 
             
             <?php
-                if(!empty($email_err)){
+                if(!empty($email_err)){ //email boşsa bootsrap hata kodları çalışır
                     echo "is-invalid";
                 }
             ?>
@@ -118,7 +118,7 @@ if(isset($_POST["giris"])){
             <div id="emailHelp" class="form-text"></div>
 
             <?php 
-                echo $email_err;
+                echo $email_err;  // bu değişken boş tanımlanmıştı.Eğer hata yoksa bu değişken boş devam eder.
             ?>
         
         </div>
@@ -128,7 +128,7 @@ if(isset($_POST["giris"])){
             <input type="password" class="form-control 
             
             <?php
-                if(!empty($parola_err)){
+                if(!empty($parola_err)){  //parola boşsa bootsrap hata kodları çalışır
                     echo "is-invalid";
                 }
             ?>
