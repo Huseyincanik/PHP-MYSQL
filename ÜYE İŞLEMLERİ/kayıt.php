@@ -130,7 +130,7 @@
             <input type="email" class="form-control 
             
             <?php
-                if(!empty($email_err)){
+                if(!empty($email_err)){       //email boşsa bootsrap hata kodları çalışır
                     echo "is-invalid";
                 }
             ?>
@@ -149,7 +149,7 @@
             <input type="password" class="form-control 
             
             <?php
-                if(!empty($parola_err)){
+                if(!empty($parola_err)){     //parola boşsa bootsrap hata kodları çalışır
                     echo "is-invalid";
                 }
             ?>
@@ -157,7 +157,7 @@
             " id="exampleInputPassword1" name="parola">
 
             <?php 
-                echo $parola_err;
+                echo $parola_err;       //bu değişken en başta boş tanımlanmıştı.
             ?>
         </div>
 
@@ -166,7 +166,7 @@
             <input type="password" class="form-control 
             
             <?php
-                if(!empty($parola_tekrar_err)){
+                if(!empty($parola_tekrar_err)){ 
                     echo "is-invalid";
                 }
             ?>
