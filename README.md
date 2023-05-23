@@ -3,7 +3,7 @@ Bu projede PHP ile MySQL veri tabanı işlemleri: kullanıcı kayıt olma ve gir
 
 ### GİRİŞ PANELİ
 
-![RESİM] https://github.com/Huseyincanik/PHP-MYSQL/assets/92374664/41953d7b-8cda-4695-8d94-5a18f7c172c4
+![RESİM](https://github.com/Huseyincanik/PHP-MYSQL/assets/92374664/41953d7b-8cda-4695-8d94-5a18f7c172c4)
 
 
 ### KAYIT PANELİ
