@@ -1,5 +1,6 @@
 # PHP-MYSQL
 Bu projede PHP ile MySQL veri tabanı işlemleri: kullanıcı kayıt olma ve giriş yapma kısımlarını yazdım .
+Veri Tabanı olarak PhpMyAdmin kullandım.
 
 ### GİRİŞ PANELİ
 
